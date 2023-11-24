@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>VIRTUAL PIANO BY KOPANETSKAYA</title>
+
+	<!-- Bootstrap reboot (для сброса стилей) -->
+	<link rel="stylesheet" href="libs/bootstrap-reboot.min.css">
+
+	<!-- Bootstrap сетка -->
+	<link rel="stylesheet" href="libs/bootstrap-grid.min.css">
+
+	<!-- Шрифты с Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+	<!--js-->
+	<script defer type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script defer type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script defer type="text/javascript" src="slick/slick.min.js"></script>
+	<script src="javascript/script.js" defer ></script>
+
+	<!--Slick-->
+	<link rel="stylesheet" href="slick/slick.css"/>
+	<link rel="stylesheet" href="slick/slick-theme.css"/>
+	<!-- Стили сайта -->
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/icon.jpg">
+</head>
+<body>
+	<div class="content">
+		<div class="container-fluid">
+			<div class="d-flex flex-column justify-content-center">
+				<header>
+					<nav class="navbar">
+						<div class="navbar__container">
+							<a href="#" class="navbar__container-brand">PIANO</a>
+							<div class="navbar__container-wrap">
+								<ul class="navbar__container-wrap-menu">
+									<li><a href="#">Уроки</a></li>
+										<li><a href="#">Мелодии</a></li>
+								</ul>
+								<a href="#modal-1" class="js-modal-open link navbar__container-wrap-callback">
+									<span>Как играть?</span>
+								</a>
+								<div class="navbar__container-wrap-burger">
+								<span></span>
+								</div>
+							</div>
+						</div>
+					</nav>
+					<div class="modal modal--m" id="modal-1">
+						<div class="modal__dialog">
+							<div class="modal__dialog-header">
+								<div class="modal__dialog-header-content">Инструкция</div>
+								<div class="modal__dialog-header-close">
+									<button class="js-modal-close modal__dialog-header-close-btn">
+										<span>&times;</span>
+									</button>
+								</div>
+							</div>
+							<div class="modal__dialog-body">
+								<div><section class="section section--1">
+									Вы можете использовать мышку для игры на виртуальном пианино, а также клавиатуру.
+								</section></div>
+							</div>
+							<div class="modal__dialog-footer">
+								<button class="js-modal-close modal__dialog-footer-close-btn">Закрыть</button>
+							</div>
+						</div>
+					</div>
+				</header>
+
+				<div class="page-header default__page__header">
+					<h1 class="h1 default__page__title" itemprop="name">Виртуальное пианино </h1>
+				</div>
+	
+				<div class="sl_span">
+					<div class="h3">Лунная соната</div>
+					<div class="sl">
+						<div class="sl_slide">
+							<img src="img/moon1.jpg" alt="" class="sl__img" alt="картинка 1"></img>
+							<h3 class="sl__text">1</h3>
+						</div>
+						<div class="sl_slide">
+							<img src="img/moon2.jpg" alt="" class="sl__img" alt="картинка 2"></img>
+							<h3 class="sl__text">2</h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="piano-span">
+					<div class="piano">
+						<button class="key key-w C" data-sound="C">C</button>
+						<button class="key key-b Cs" data-sound="Cs">C#</button>
+						<button class="key key-w D" data-sound="D">D</button>
+						<button class="key key-b Ds" data-sound="Ds">D#</button>
+						<button class="key key-w E" data-sound="E">E</button>
+						<button class="key key-w F" data-sound="F">F</button>
+						<button class="key key-b Fs" data-sound="Fs">F#</button>
+						<button class="key key-w G" data-sound="G">G</button>
+						<button class="key key-b Gs" data-sound="Gs">G#</button>
+						<button class="key key-w A" data-sound="A">A</button>
+						<button class="key key-b As" data-sound="As">A#</button>
+						<button class="key key-w B" data-sound="B">B</button>
+
+						<button class="key key-w C1" data-sound="C1">C</button>
+						<button class="key key-b Cs1" data-sound="Cs1">C#</button>
+						<button class="key key-w D1" data-sound="D1">D</button>
+						<button class="key key-b Ds1" data-sound="Ds1">D#</button>
+						<button class="key key-w E1" data-sound="E1">E</button>
+						<button class="key key-w F1" data-sound="F1">F</button>
+						<button class="key key-b Fs1" data-sound="Fs1">F#</button>
+						<button class="key key-w G1" data-sound="G1">G</button>
+						<button class="key key-b Gs1" data-sound="Gs1">G#</button>
+						<button class="key key-w A1" data-sound="A1">A</button>
+						<button class="key key-b As1" data-sound="As1">A#</button>
+						<button class="key key-w B1" data-sound="B1">B</button>
+					</div>
+				</div>
+
+				<audio id="C" src="audio/c3.mp3"></audio>
+				<audio id="Cs" src="audio/c+3.mp3"></audio>
+				<audio id="D" src="audio/d3.mp3"></audio>
+				<audio id="Ds" src="audio/d+3.mp3"></audio>
+				<audio id="E" src="audio/e3.mp3"></audio>
+				<audio id="F" src="audio/f3.mp3"></audio>
+				<audio id="Fs" src="audio/f+3.mp3"></audio>
+				<audio id="G" src="audio/g3.mp3"></audio>
+				<audio id="Gs" src="audio/g+3.mp3"></audio>
+				<audio id="A" src="audio/a4.mp3"></audio>
+				<audio id="As" src="audio/a+4.mp3"></audio>
+				<audio id="B" src="audio/b4.mp3"></audio>
+
+				<audio id="C1" src="audio/c4.mp3"></audio>
+				<audio id="Cs1" src="audio/c+4.mp3"></audio>
+				<audio id="D1" src="audio/d4.mp3"></audio>
+				<audio id="Ds1" src="audio/d+4.mp3"></audio>
+				<audio id="E1" src="audio/e4.mp3"></audio>
+				<audio id="F1" src="audio/f4.mp3"></audio>
+				<audio id="Fs1" src="audio/f+4.mp3"></audio>
+				<audio id="G1" src="audio/g4.mp3"></audio>
+				<audio id="Gs1" src="audio/g+4.mp3"></audio>
+				<audio id="A1" src="audio/a5.mp3"></audio>
+				<audio id="As1" src="audio/a+5.mp3"></audio>
+				<audio id="B1" src="audio/b5.mp3"></audio>
+			</div>
+		</div>
+	</div>
+	<footer class="footer" role="contentinfo">
+    	<div class="container-fluid">
+        	<div class="row">
+          		<p>Проект Копанецкой Анастасии "Виртуальное пианино", Краснодар, Россия, 2023.<br></p>
+        	</div>
+    	</div>
+  	</footer>
+</body>
+</html>
