@@ -347,10 +347,6 @@ body {
   transform: rotate(45deg) translate(0, 50%);
 }
 
-.open {
-  display: flex;
-}
-
 @keyframes burgerAnimation {
   from {
     opacity: 0;

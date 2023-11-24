@@ -1,7 +1,13 @@
 //АНИМАЦИЯ ДЛЯ БУРГЕР-МЕНЮ
 document.querySelector('.navbar__container-wrap-burger').addEventListener('click',function(){
-  this.classList.toggle('active');
-  document.querySelector('.navbar__container-wrap-menu').classList.toggle('open');
+  if(document.querySelector('.navbar__container-wrap-menu').style.display=="flex"){
+    document.querySelector('.navbar__container-wrap-menu').style.display="none";
+    this.classList.toggle('active');
+  }
+  else{
+    document.querySelector('.navbar__container-wrap-menu').style.display="flex";
+    this.classList.toggle('active');
+  } 
 })
 
 //СОБЫТИЯ КЛАВИАТУРЫ

@@ -349,9 +349,6 @@ body {
   }
 
 }
-.open{
-	display: flex;
-}
 @keyframes burgerAnimation{
 	from{opacity:0;}
 	to{opacity: 1;}
@@ -385,7 +382,7 @@ body {
   }
   .navbar__container-wrap-burger{ display: flex; margin-right: 5px;}
   .navbar__container-wrap-menu{
-    display: none;
+    display:none;
 		flex-direction: column;
 		position: fixed;
 		height: 100%;
